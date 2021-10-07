@@ -41,8 +41,6 @@ public class ResponseExceptionHandler extends ResponseEntityExceptionHandler{
 			return e.getDefaultMessage().toString().concat(", ");
 		}).collect(Collectors.joining());
 		
-//		ObjectMessage er = new ObjectMessage(LocalDateTime.now(), mensaje, request.getDescription(false));
-//		return new ResponseEntity<Object>(er, HttpStatus.BAD_REQUEST);
 		return new ResponseEntity<Object>(ObjectResponse.builder()
 				.message(ObjectMessage.builder().status(CodeConstant.ERROR).message(mensaje).build()).data(null).build(), HttpStatus.BAD_REQUEST);
 		

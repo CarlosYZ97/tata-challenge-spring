@@ -21,11 +21,11 @@ public class AppTipoCambioMonedaApplication {
     @Bean
     public CommandLineRunner data(ITypeCurrencyRepository repository) {
         return (args) -> {
-            repository.save(new TypeCurrencyEntity(1L,"EUR", "USD",BigDecimal.valueOf(0.88857)));
-            repository.save(new TypeCurrencyEntity(2L,"JPY","USD",BigDecimal.valueOf(0.17)));
-            repository.save(new TypeCurrencyEntity(3L,"MXN","USD",BigDecimal.valueOf(19.232F)));
-            repository.save(new TypeCurrencyEntity(4L,"PEN","USD",BigDecimal.valueOf(0.75705F)));
-            repository.save(new TypeCurrencyEntity(4L,"USD","PEN",BigDecimal.valueOf(0.75705F)));
+            repository.save(new TypeCurrencyEntity(1L,"EUR", "USD",BigDecimal.valueOf(1.16F)));
+            repository.save(new TypeCurrencyEntity(2L,"JPY","USD",BigDecimal.valueOf(0.0090F)));
+            repository.save(new TypeCurrencyEntity(3L,"MXN","USD",BigDecimal.valueOf(0.049F)));
+            repository.save(new TypeCurrencyEntity(4L,"PEN","USD",BigDecimal.valueOf(0.24F)));
+            repository.save(new TypeCurrencyEntity(5L,"USD","PEN",BigDecimal.valueOf(4.14F)));
         };
     }
 	
