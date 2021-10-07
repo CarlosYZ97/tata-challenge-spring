@@ -45,7 +45,7 @@
 
 ### Instalación 🔧
 
-Descargar Imagen Docker de Api Tipo de Cambio Moneda
+Descargar Imagen de DockerHub que corresponde al Api Tipo de Cambio Moneda
 
 ```
 docker pull carlosyz1997/api-tipo-moneda:0.1.0
